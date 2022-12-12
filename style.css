@@ -46,11 +46,12 @@ li {
 }
 
 main {
-    max-width: 115rem;
+    max-width: 120rem;
     padding: 8rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6rem 3rem;
+    margin: 0 2rem;
 }
 header {
     display: flex;
@@ -132,6 +133,7 @@ aside {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
 }
 .card {
     display: flex;
