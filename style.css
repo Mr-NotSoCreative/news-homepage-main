@@ -46,7 +46,7 @@ li {
 }
 
 main {
-    max-width: 111rem;
+    max-width: 115rem;
     padding: 8rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -112,6 +112,9 @@ h1 {
     margin-bottom: 1.5rem;
     display: block;
 }
+.list-subtitle:hover {
+    color: var(--Soft-orange);
+}
 .list-desc {
     color: var(--Grayish-blue);
     margin-bottom: 2rem;
@@ -127,6 +130,33 @@ h1 {
 
 aside {
     grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.card {
+    display: flex;
+    gap: 2rem;
+}
+.card img {
+    width: 15rem;
+}
+.num {
+    color: var(--Grayish-blue);
+    font-size: 4rem;
+    font-weight: 700;
+}
+.card-info {
+    display: grid;
+    row-gap: .5rem;
+}
+.card-link {
+    display: block;
+    color: var(--Very-dark-blue);
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+.card-link:hover {
+    color: var(--Soft-red);
 }
 .nav-list {
     display: flex;
