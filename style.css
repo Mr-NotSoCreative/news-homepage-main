@@ -1,254 +1,247 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 
 :root {
-    --Soft-orange: hsl(35, 77%, 62%);
-    --Soft-red: hsl(5, 85%, 63%);
-    --Off-white: hsl(36, 100%, 99%);
-    --Grayish-blue: hsl(233, 8%, 79%);
-    --Dark-grayish-blue: hsl(236, 13%, 42%);
-    --Very-dark-blue: hsl(240, 100%, 5%);
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    font-size: 62.5%;
-
-
+  font-size: 62.5%;
 }
 body {
-    font-size: 1.5rem;
-    font-family: 'Inter', sans-serif;
-    background-color: var(--Off-white);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  background-color: var(--Off-white);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-img, picture {
-    max-width: 100%;
-    display: block;
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
 img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 a {
-    text-decoration: none;
-    font-family: inherit;
+  text-decoration: none;
+  font-family: inherit;
 }
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 main {
-    max-width: 120rem;
-    padding: 8rem 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6rem 3rem;
-    margin: 0 2rem;
+  max-width: 120rem;
+  padding: 8rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem 3rem;
+  margin: 0 2rem;
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / -1;
 }
 .bright-future {
-    grid-column: 1 / span 2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 3rem;
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3rem;
 }
 .web-3-pic {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
 h1 {
-    font-size: 5.5rem;
-    color: var(--Very-dark-blue);
-    font-weight: 800;
+  font-size: 5.5rem;
+  color: var(--Very-dark-blue);
+  font-weight: 800;
 }
 
 .desc {
-    line-height: 2.6rem;
-    color: var(--Dark-grayish-blue);
+  line-height: 2.6rem;
+  color: var(--Dark-grayish-blue);
 }
 .title-desc-div {
-    display: grid;
+  display: grid;
 }
 .read-btn {
-    align-self: flex-end;
-    background-color: var(--Soft-red);
-    color: var(--Off-white);
-    max-width: 17rem;
-    text-align: center;
-    padding: 1.3rem 0;
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: .3rem;
-    display: block;
+  align-self: flex-end;
+  background-color: var(--Soft-red);
+  color: var(--Off-white);
+  max-width: 17rem;
+  text-align: center;
+  padding: 1.3rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  display: block;
 }
 
 .read-btn:hover {
-    background-color: var(--Very-dark-blue);
+  background-color: var(--Very-dark-blue);
 }
 .new {
-    background-color: var(--Very-dark-blue);
-    padding: 3rem 2rem;
+  background-color: var(--Very-dark-blue);
+  padding: 3rem 2rem;
 }
 .list-title {
-    color: var(--Soft-orange);
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+  color: var(--Soft-orange);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
 .list-subtitle {
-    color: var(--Off-white);
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    display: block;
+  color: var(--Off-white);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: block;
 }
 .list-subtitle:hover {
-    color: var(--Soft-orange);
+  color: var(--Soft-orange);
 }
 .list-desc {
-    color: var(--Grayish-blue);
-    margin-bottom: 2rem;
-    line-height: 2.3rem;
+  color: var(--Grayish-blue);
+  margin-bottom: 2rem;
+  line-height: 2.3rem;
 }
-.new ul li:nth-of-type(1), .new ul li:nth-of-type(2) {
-    border: none;
-    border-bottom: 0.1rem solid var(--Dark-grayish-blue);
+.new ul li:nth-of-type(1),
+.new ul li:nth-of-type(2) {
+  border: none;
+  border-bottom: 0.1rem solid var(--Dark-grayish-blue);
 }
 .new ul li {
-    padding: 2.5rem 0;
+  padding: 2.5rem 0;
 }
 
 aside {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
 }
 .card {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 .card img {
-    width: 15rem;
+  width: 15rem;
 }
 .num {
-    color: var(--Grayish-blue);
-    font-size: 4rem;
-    font-weight: 700;
+  color: var(--Grayish-blue);
+  font-size: 4rem;
+  font-weight: 700;
 }
 .card-info {
-    display: grid;
-    row-gap: .5rem;
+  display: grid;
+  row-gap: 0.5rem;
 }
 .card-desc {
-    color: var(--Dark-grayish-blue);
-    line-height: 2.3rem;
+  color: var(--Dark-grayish-blue);
+  line-height: 2.3rem;
 }
 .card-link {
-    display: block;
-    color: var(--Very-dark-blue);
-    font-weight: 800;
-    font-size: 1.6rem;
+  display: block;
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+  font-size: 1.6rem;
 }
 .card-link:hover {
-    color: var(--Soft-red);
+  color: var(--Soft-red);
 }
 .nav-list {
-    display: flex;
-    align-items: center;
-    gap: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
 }
 .nav-list a {
-    color: var(--Very-dark-blue);
+  color: var(--Very-dark-blue);
 }
 .nav-list a:hover {
-    color: var(--Soft-red);
-
-
+  color: var(--Soft-red);
 }
 
 /* 810 px */
 @media screen and (max-width: 51em) {
-    main {
-        grid-template-columns: 1fr;
-        column-gap: 0;
-    }
-    h1 {
-        font-size: 4.5rem;
-    }
+  main {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
 }
 
-.close, .menu {
-    display: none;
-    cursor: pointer;
- }
+.close,
+.menu {
+  display: none;
+  cursor: pointer;
+}
 
 /* 565 px */
 @media screen and (max-width: 36em) {
-    .bright-future {
-        grid-template-columns: 1fr;
-    }
-    .title-desc-div {
-        gap: 1.5rem;
-    }
+  .bright-future {
+    grid-template-columns: 1fr;
+  }
+  .title-desc-div {
+    gap: 1.5rem;
+  }
 
-    .menu {
-        display: inline;
-      }
-      .close {
-        position: absolute;
-        right: 2.4rem;
-        display: block;
-      }
-    
-      .nav {
-        position: fixed;
-        top: 0;
-        background-color: white;
-        height: 100vh;
-        z-index: 100;
-        transition: 0.3s ease-in-out;
-        right: -100%;
-        width: 60%;
-        padding: 2rem;
-    }
-    .nav-list {
-        flex-direction: column;
-        padding: 15rem 30rem 2rem 5rem;
-      }
-      .show {
-        right: 0;
-        
-      }
-     .logo {
-        width: 5rem;
-     }
-     main {
-        padding: 2.4rem 0;
-     }
-     aside {
-        gap: 2.5rem;
-     }
-     .card img {
-        width: 10rem;
-     }
+  .menu {
+    display: inline;
+  }
+  .close {
+    position: absolute;
+    right: 2.4rem;
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+    right: -100%;
+    width: 60%;
+    padding: 2rem;
+  }
+  .nav-list {
+    flex-direction: column;
+    padding: 15rem 30rem 2rem 5rem;
+  }
+  .show {
+    right: 0;
+  }
+  .logo {
+    width: 5rem;
+  }
+  main {
+    padding: 2.4rem 0;
+  }
+  aside {
+    gap: 2.5rem;
+  }
+  .card img {
+    width: 10rem;
+  }
 }
-
-
-
-
-
 
 /* .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); } */
