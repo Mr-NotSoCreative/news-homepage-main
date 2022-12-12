@@ -151,6 +151,10 @@ aside {
     display: grid;
     row-gap: .5rem;
 }
+.card-desc {
+    color: var(--Dark-grayish-blue);
+    line-height: 2.3rem;
+}
 .card-link {
     display: block;
     color: var(--Very-dark-blue);
@@ -232,6 +236,12 @@ aside {
      }
      main {
         padding: 2.4rem 0;
+     }
+     aside {
+        gap: 2.5rem;
+     }
+     .card img {
+        width: 10rem;
      }
 }
 
