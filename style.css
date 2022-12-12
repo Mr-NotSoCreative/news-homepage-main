@@ -70,6 +70,23 @@ header {
 h1 {
     font-size: 5.5rem;
     color: var(--Very-dark-blue);
+    font-weight: 800;
+}
+
+.desc {
+    line-height: 2.6rem;
+    color: var(--Dark-grayish-blue);
+}
+.title-desc-div {
+    display: grid;
+}
+.read-btn {
+    align-self: flex-end;
+    background-color: var(--Soft-red);
+    color: var(--Off-white);
+    max-width: 15rem;
+    text-align: center;
+    padding: 1rem 3rem;
 }
 
 aside {
