@@ -48,11 +48,32 @@ li {
 main {
     max-width: 110rem;
     padding: 8rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem 3rem;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-column: 1 / -1;
+}
+.bright-future {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+}
+.web-3-pic {
+    grid-column: 1 / -1;
+}
+h1 {
+    font-size: 5.5rem;
+    color: var(--Very-dark-blue);
+}
+
+aside {
+    grid-column: 1 / -1;
 }
 .nav-list {
     display: flex;
