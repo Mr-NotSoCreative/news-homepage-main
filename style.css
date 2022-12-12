@@ -178,11 +178,17 @@ aside {
 @media screen and (max-width: 51em) {
     main {
         grid-template-columns: 1fr;
+        column-gap: 0;
     }
     h1 {
         font-size: 4.5rem;
     }
 }
+
+.close, .menu {
+    display: none;
+    cursor: pointer;
+ }
 
 /* 565 px */
 @media screen and (max-width: 36em) {
@@ -192,6 +198,41 @@ aside {
     .title-desc-div {
         gap: 1.5rem;
     }
+
+    .menu {
+        display: inline;
+      }
+      .close {
+        position: absolute;
+        right: 2.4rem;
+        display: block;
+      }
+    
+      .nav {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        height: 100vh;
+        z-index: 100;
+        transition: 0.3s ease-in-out;
+        right: -100%;
+        width: 60%;
+        padding: 2rem;
+    }
+    .nav-list {
+        flex-direction: column;
+        padding: 15rem 30rem 2rem 5rem;
+      }
+      .show {
+        right: 0;
+        
+      }
+     .logo {
+        width: 5rem;
+     }
+     main {
+        padding: 2.4rem 0;
+     }
 }
 
 
