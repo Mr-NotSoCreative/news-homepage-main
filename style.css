@@ -170,8 +170,29 @@ aside {
 }
 .nav-list a:hover {
     color: var(--Soft-red);
+
+
 }
 
+/* 810 px */
+@media screen and (max-width: 51em) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+/* 565 px */
+@media screen and (max-width: 36em) {
+    .bright-future {
+        grid-template-columns: 1fr;
+    }
+    .title-desc-div {
+        gap: 1.5rem;
+    }
+}
 
 
 
