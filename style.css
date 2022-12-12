@@ -59,6 +59,13 @@ header {
     align-items: center;
     gap: 3.5rem;
 }
+.nav-list a {
+    color: var(--Very-dark-blue);
+}
+.nav-list a:hover {
+    color: var(--Soft-red);
+}
+
 
 
 
