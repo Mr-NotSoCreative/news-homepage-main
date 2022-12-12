@@ -69,7 +69,7 @@ header {
   grid-column: 1 / -1;
 }
 h1 {
-  font-size: 5.5rem;
+  font-size: 6rem;
   color: var(--Very-dark-blue);
   font-weight: 800;
 }
